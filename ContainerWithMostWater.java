@@ -25,7 +25,6 @@ public class ContainerWithMostWater {
     heights.add(5);
     heights.add(4);
     heights.add(8);
-    heights.add(3);
     heights.add(7);
     int result = Water(heights);
     System.out.println(result);
