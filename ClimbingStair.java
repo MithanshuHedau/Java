@@ -12,6 +12,7 @@ public class ClimbingStair {
   }
 
   public static void main(String[] args) {
+    // int s
     stair(0, 5, " ");
   }
 }
