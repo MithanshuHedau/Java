@@ -12,7 +12,6 @@ public class ClimbingStair {
   }
 
   public static void main(String[] args) {
-    // int s
     System.out.println("Ans is : ");
     stair(0, 5, " ");
   }
