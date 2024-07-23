@@ -1,5 +1,6 @@
 
 public class BackTrackArray {
+
   public static void changearray(int[] arr, int i, int val) {
     if (i == arr.length) {
       printarray(arr);
@@ -18,9 +19,8 @@ public class BackTrackArray {
   }
 
   public static void main(String[] args) {
-    int[] arr = new int[5];
+    int arr[] = new int[5];
     changearray(arr, 0, 1);
     printarray(arr);
   }
-
 }
