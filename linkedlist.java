@@ -57,6 +57,45 @@ public class linkedlist {
       }
       nn.next = temp.next;
       temp.next = nn;
+      size++;
+    }
+  }
+
+  public void deletefirst() {
+    if (size == 0) {
+      System.out.println("List is empty");
+    } else {
+      head = head.next;
+      size--;
+    }
+  }
+
+  public void deletelast() {
+    if (size == 0) {
+      System.out.println("List is empty");
+    } else {
+      Node temp = head;
+      while (temp.next != tail) {
+        temp = temp.next;
+      }
+      temp.next = null;
+      tail = temp;
+      size--;
+    }
+  }
+
+  public void deletemiddle(int item) {
+    int i = 0;
+    Node temp = head;
+    if (size == 0) {
+      System.out.println("List is empty");
+    } else {
+      while (i != item - 1) {
+        temp = temp.next;
+        i++;
+      }
+      temp.next = temp.next.next;
+      size--;
     }
   }
 
@@ -65,10 +104,22 @@ public class linkedlist {
     ll.addfirst(1);
     ll.addfirst(2);
     ll.addfirst(3);
+    ll.display();
+    System.out.println(" ");
     ll.addlast(4);
     ll.addlast(5);
-    // ll.display();
+    ll.display();
+    System.out.println(" ");
     ll.addmiddle(10, 3);
+    ll.display();
+    System.out.println(" ");
+    ll.deletefirst();
+    ll.display();
+    System.out.println(" ");
+    ll.deletelast();
+    ll.display();
+    System.out.println(" ");
+    ll.deletemiddle(2);
     ll.display();
   }
 }
