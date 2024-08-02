@@ -57,7 +57,7 @@ public class linkedlist {
       }
       nn.next = temp.next;
       temp.next = nn;
-      size++;
+      size++;// 
     }
   }
 
