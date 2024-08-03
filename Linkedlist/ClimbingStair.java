@@ -1,3 +1,4 @@
+package Linkedlist;
 public class ClimbingStair {
   public static void stair(int curr, int n, String ans) {
     if (curr == n) {

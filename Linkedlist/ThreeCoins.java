@@ -1,3 +1,4 @@
+package Linkedlist;
 public class ThreeCoins {
 
   public static void main(String[] args) {

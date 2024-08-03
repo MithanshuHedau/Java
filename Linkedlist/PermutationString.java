@@ -1,6 +1,8 @@
+package Linkedlist;
 public class PermutationString {
   public static void main(String[] args) {
     String str = "abcd";
+    // Permu  
     String ans = " ";
     permu(str, "");
   }

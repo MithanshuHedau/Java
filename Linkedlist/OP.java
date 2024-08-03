@@ -1,4 +1,6 @@
-public class linkedlist {
+package Linkedlist;
+
+public class OP {
   class Node {
     int data;
     Node next;
@@ -57,7 +59,7 @@ public class linkedlist {
       }
       nn.next = temp.next;
       temp.next = nn;
-      size++;// 
+      size++;//
     }
   }
 
@@ -99,27 +101,46 @@ public class linkedlist {
     }
   }
 
+  public int size() {
+    return size;
+  }
+
+  public void middleelement() {
+    int i = 0;
+    Node temp = head;
+    while (i != size / 2) {
+      temp = temp.next;
+      i++;
+    }
+    System.out.println(temp.data);
+  }
+
   public static void main(String[] args) {
-    linkedlist ll = new linkedlist();
-    ll.addfirst(1);
-    ll.addfirst(2);
+    OP ll = new OP();
+    ll.addfirst(5);
+    ll.addfirst(4);
     ll.addfirst(3);
-    ll.display();
+    ll.addfirst(2);
+    ll.addfirst(1);
     System.out.println(" ");
-    ll.addlast(4);
-    ll.addlast(5);
     ll.display();
+    // ll.addlast(4);
+    // ll.addlast(5);
+    // ll.display();
+    // System.out.println(" ");
+    // ll.addmiddle(10, 3);
+    // ll.display();
+    // System.out.println(" ");
+    // ll.deletefirst();
+    // ll.display();
+    // System.out.println(" ");
+    // ll.deletelast();
+    // ll.display();
+    // System.out.println(" ");
+    // ll.deletemiddle(2);
+    // ll.display();
     System.out.println(" ");
-    ll.addmiddle(10, 3);
-    ll.display();
-    System.out.println(" ");
-    ll.deletefirst();
-    ll.display();
-    System.out.println(" ");
-    ll.deletelast();
-    ll.display();
-    System.out.println(" ");
-    ll.deletemiddle(2);
-    ll.display();
+    System.out.println("Size: " + ll.size());
+    ll.middleelement();
   }
 }

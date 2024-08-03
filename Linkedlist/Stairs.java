@@ -1,3 +1,4 @@
+package Linkedlist;
 public class Stairs {
   public static void main(String[] args) {
     printans(4, 0, "");
