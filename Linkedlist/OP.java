@@ -115,6 +115,21 @@ public class OP {
     System.out.println(temp.data);
   }
 
+  public void reverse() {
+    //3 variable approach 
+    Node temp = head;
+    Node prev = null;
+    Node next = null;
+    tail = head;
+    while (temp != null) {
+      next = temp.next;
+      temp.next = prev;
+      prev = temp;
+      temp = next;
+    }
+    head = prev;
+  }
+
   public static void main(String[] args) {
     OP ll = new OP();
     ll.addfirst(5);
@@ -142,5 +157,7 @@ public class OP {
     System.out.println(" ");
     System.out.println("Size: " + ll.size());
     ll.middleelement();
+    ll.reverse();
+    ll.display();
   }
 }
