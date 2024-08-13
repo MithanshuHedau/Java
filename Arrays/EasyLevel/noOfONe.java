@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.EasyLevel;
 
 public class noOfONe {
   public static void main(String[] args) {
