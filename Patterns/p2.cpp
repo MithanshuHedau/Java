@@ -10,11 +10,12 @@ int main()
 {
   for (int i = 0; i < 4; i++)
   {
+    char ch = 'A' + i;
     for (int j = 0; j <= i; j++)
     {
-      cout << i;
+      cout << ch << " ";
     }
-    cout << endl;
+    cout << endl; 
   }
   return 0;
 }
