@@ -12,9 +12,9 @@ int main()
 
   for (int i = 1; i < n; i++)
   {
-    cost = arr[i] - minNum;
-    profit = max(profit, cost);
-    minNum = min(minNum, arr[i]);
+    cost = arr[i] - minNum;       // cost kadhli aadhi
+    profit = max(profit, cost);   // profit nikala , maximum, cost and profit mese
+    minNum = min(minNum, arr[i]); // minNum ko increment kiya ,,, minNUm and arr[i] se
   }
   cout << profit;
 
