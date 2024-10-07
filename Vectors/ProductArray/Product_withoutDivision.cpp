@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+//Without Division operator 
 int main()
 {
   vector<int> vec1 = {1, 2, 3, 4};
