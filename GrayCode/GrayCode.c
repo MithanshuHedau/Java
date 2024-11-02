@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+// Gray code generation
 void generateGrayCode(int n, char **grayCodes, int *size)
 {
   if (n == 1)
